@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Business Name | Professional Services</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <nav>
@@ -15,16 +16,34 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="dashboard.html" class="nav-dashboard">Dashboard</a></li>
             </ul>
         </div>
     </nav>
 
     <section class="hero">
         <div class="container">
-            <h1>Your Business, Our Priority</h1>
-            <p>Delivering professional solutions tailored to your needs.</p>
-            <a href="#services" class="btn">Our Services</a>
-            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            <div class="hero-badge animate-on-scroll">Professional Services</div>
+            <h1 class="animate-on-scroll">Your Business, Our Priority</h1>
+            <p class="animate-on-scroll">Delivering professional solutions tailored to your needs with modern expertise and dedication.</p>
+            <div class="hero-buttons animate-on-scroll">
+                <a href="#services" class="btn">Our Services</a>
+                <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+            </div>
+            <div class="hero-stats animate-on-scroll">
+                <div class="hero-stat">
+                    <span class="hero-stat-number">500+</span>
+                    <span class="hero-stat-label">Clients Served</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">98%</span>
+                    <span class="hero-stat-label">Satisfaction</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number">10+</span>
+                    <span class="hero-stat-label">Years Experience</span>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -33,11 +52,13 @@
             <h2 class="section-title animate-on-scroll">About Us</h2>
             <div class="about-content">
                 <div class="about-text animate-on-scroll">
+                    <div class="about-icon"><i class="fas fa-rocket"></i></div>
                     <h3>Building Success Since Day One</h3>
                     <p>We are a dedicated team of professionals committed to delivering exceptional results for our clients. Our approach combines industry expertise with innovative solutions.</p>
                     <p>Whether you're a startup or an established enterprise, we tailor our services to meet your unique business goals and help you grow.</p>
                 </div>
                 <div class="about-text animate-on-scroll">
+                    <div class="about-icon"><i class="fas fa-star"></i></div>
                     <h3>Why Choose Us</h3>
                     <p>With years of experience and a track record of success, we understand what it takes to help businesses thrive in today's competitive landscape.</p>
                     <p>Our client-focused approach ensures that every project receives the attention and expertise it deserves.</p>
@@ -49,21 +70,31 @@
     <section id="services" class="services">
         <div class="container">
             <h2 class="section-title animate-on-scroll">Our Services</h2>
+            <p class="section-subtitle animate-on-scroll">Tap any service to chat with us on WhatsApp instantly</p>
             <div class="services-grid">
                 <div class="service-card animate-on-scroll stagger-1">
-                    <div class="service-icon">&#128188;</div>
+                    <div class="service-icon"><i class="fas fa-briefcase"></i></div>
                     <h3>Business Consulting</h3>
                     <p>Strategic advice to optimize your operations and accelerate growth.</p>
+                    <a href="https://wa.me/1234567890?text=Hi%2C%20I%27m%20interested%20in%20Business%20Consulting%20services" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
                 </div>
                 <div class="service-card animate-on-scroll stagger-2">
-                    <div class="service-icon">&#128187;</div>
+                    <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
                     <h3>Digital Solutions</h3>
                     <p>Modern technology solutions to streamline your business processes.</p>
+                    <a href="https://wa.me/1234567890?text=Hi%2C%20I%27m%20interested%20in%20Digital%20Solutions%20services" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
                 </div>
                 <div class="service-card animate-on-scroll stagger-3">
-                    <div class="service-icon">&#128200;</div>
+                    <div class="service-icon"><i class="fas fa-chart-line"></i></div>
                     <h3>Marketing Strategy</h3>
                     <p>Data-driven marketing campaigns that deliver measurable results.</p>
+                    <a href="https://wa.me/1234567890?text=Hi%2C%20I%27m%20interested%20in%20Marketing%20Strategy%20services" class="btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                    </a>
                 </div>
             </div>
         </div>
@@ -82,13 +113,23 @@
                 </form>
                 <div class="contact-info animate-on-scroll">
                     <h3>Get in Touch</h3>
-                    <p>Email: contact@yourbusiness.com</p>
-                    <p>Phone: (123) 456-7890</p>
-                    <p>Address: 123 Business Street, City, Country</p>
+                    <p><i class="fas fa-envelope"></i> contact@yourbusiness.com</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Business Street, City, Country</p>
+                    <div class="contact-social">
+                        <a href="https://wa.me/1234567890" class="social-link whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <footer>
         <div class="container">
